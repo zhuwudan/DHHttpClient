@@ -19,12 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [[DHHttpClient shareInstance]setHeader:@{
-                                             @"Accept-Language" : @"zh-Hans-CN, en-us;q=0.8",
-                                             @"User-Agent" : @"HNRM/1.9.1 (iPhone; iOS 11.0; Scale/3.00)",
-                                             @"deviceID" : @"4e918db8ee01d0cebcf34d47c710d35164a6efe8",
-                                             @"os" : @"apple",
-                                             @"token" : @"MTU5MDM2OTU4NjI=",
-                                             @"version" : @"1.9.1"
+
                                              }];
     UIImage *image = [UIImage imageNamed:@"1.jpg"];
     [[DHHttpClient shareInstance]uploadImageWithURL:@"https://rm.dahe.cn/mobile/material/uploads" parameters:nil data:UIImageJPEGRepresentation(image, 1.f) success:^(id responseObject) {
