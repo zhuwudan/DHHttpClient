@@ -22,7 +22,7 @@
 
                                              }];
     UIImage *image = [UIImage imageNamed:@"1.jpg"];
-    [[DHHttpClient shareInstance]uploadImageWithURL:@"https://rm.dahe.cn/mobile/material/uploads" parameters:nil data:UIImageJPEGRepresentation(image, 1.f) success:^(id responseObject) {
+    [[DHHttpClient shareInstance]uploadImageWithURL:@"" parameters:nil data:UIImageJPEGRepresentation(image, 1.f) success:^(id responseObject) {
         
     } fail:^(NSError *error) {
         
